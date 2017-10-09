@@ -4,7 +4,7 @@
 <p>In the programs I have created, a string of 1024 alphanumeric characters is broken up into frames with 8 bytes of data. Each frame number is attached to the header along with the total number of frames. The payload data is run through a Cyclic Redundancy Check (CRC-16) and then the resulting checksum is appended to the end of the frame.
 This frame is then sent as a binary string through the socket to the server. </p>
 
-<h2>The server</h2>  
+<h2>The Server</h2>  
 <p>The server breaks the frame up into 8 byte segments. The payload is passed into the CRC function which is the same as client side and if no data was lost it will return a checksum equal to that of the checksum sent from the client. It then sends an acknowledgment to the client that it has received the frame. If the checksums do not equal, the server sends a negative acknowledgment.
 The rest of the data is analysed so that the server can display what it has received.
 </p>
