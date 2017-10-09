@@ -1,6 +1,6 @@
 <h1>Proxy Server</h1>
 
-<p>The report contains the python code written to create a proxy server the management console used to control the blacklist. 
+<p>The repository contains the python code written to create a proxy server the management console used to control the blacklist. 
 The proxy is implemented using sockets. Here is the process in which the proxy runs:</p>
 
 <ul>
